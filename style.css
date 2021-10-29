@@ -1,0 +1,60 @@
+.titolo{
+    box-sizing: border-box;
+    display: block;
+    height: 100px;
+    background: palevioletred;
+    margin-top: 2%;
+}
+.contenitore1{
+    box-sizing: border-box;
+    display: block;
+    height: 400px;
+    background: rgb(255, 244, 95);
+    margin-top: 2%;
+}
+.contenitore2{
+    clear: both;
+    margin-top: 2%;
+    box-sizing: border-box;
+    height: 600px;
+}
+.scatolatop{
+    box-sizing: border-box;
+    height: 80px;
+}
+.scatolatop,
+.lati,
+.scatolamid{
+    background: rgb(186, 241, 255);
+}
+.lati{
+    box-sizing: border-box;
+    width: 15%; 
+    height: 520px;
+    border-bottom:20px solid rgb(87, 104, 255); 
+    border-top:20px solid rgb(87, 104, 255); 
+}
+.scatolasx{     
+    float: left;
+}
+.scatoladx{     
+    float: right;
+}
+.scatolamid{
+    box-sizing: border-box;
+    float: left;
+    width: 70%;
+    height: 520px;    
+    border: 20px solid rgb(87, 104, 255);
+}
+.contenitore3{
+    margin-top: 1%;
+    box-sizing: border-box;
+    height: 50px;
+    background: rgb(60, 0, 128);
+}
+.contenitore2::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
