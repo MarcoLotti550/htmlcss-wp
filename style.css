@@ -1,60 +1,54 @@
-.titolo{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    display: block;
-    height: 100px;
-    background: palevioletred;
-    margin-top: 2%;
+}
+body{
+    width: 70%;
+    margin: 0 auto;
+}
+.logo img{
+    width: 200px;
+    margin-bottom: 40px;
+}
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 5px;
 }
 .contenitore1{
-    box-sizing: border-box;
-    display: block;
-    height: 400px;
-    background: rgb(255, 244, 95);
-    margin-top: 2%;
+    position: relative;
+    width: 100%;
+    background-image: url(img/banner.jpg);
+    height: 700px;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 30px;
 }
-.contenitore2{
-    clear: both;
-    margin-top: 2%;
-    box-sizing: border-box;
-    height: 600px;
+.titolo{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    left: 50px;
+    color: #fff; 
 }
-.scatolatop{
-    box-sizing: border-box;
-    height: 80px;
+.testo{
+    position: absolute;
+    bottom: 40px;
+    height: 25%;
+    width: 55%;
 }
-.scatolatop,
-.lati,
-.scatolamid{
-    background: rgb(186, 241, 255);
+.titolo div{
+    font-size: 20px;
+    font-weight: normal;
+
 }
-.lati{
-    box-sizing: border-box;
-    width: 15%; 
-    height: 520px;
-    border-bottom:20px solid rgb(87, 104, 255); 
-    border-top:20px solid rgb(87, 104, 255); 
+.titolo2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
 }
-.scatolasx{     
-    float: left;
+.titolo2 div{
+    font-size: 20px;
+    font-weight: normal;
 }
-.scatoladx{     
-    float: right;
-}
-.scatolamid{
-    box-sizing: border-box;
-    float: left;
-    width: 70%;
-    height: 520px;    
-    border: 20px solid rgb(87, 104, 255);
-}
-.contenitore3{
-    margin-top: 1%;
-    box-sizing: border-box;
-    height: 50px;
-    background: rgb(60, 0, 128);
-}
-.contenitore2::after {
-    clear: both;
-    display: block;
-    content: "";
-  }
