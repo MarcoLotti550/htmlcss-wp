@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: montserrat;
 }
 body{
     width: 70%;
@@ -10,11 +12,17 @@ body{
 .logo img{
     width: 200px;
     margin-bottom: 40px;
+    padding-right: 30px;
+    border-right: 1px solid #ddd;
 }
 ul li{
     display: inline-block;
     list-style-type: none;
     margin: 0 5px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
 }
 .contenitore1{
     position: relative;
@@ -24,6 +32,7 @@ ul li{
     background-size: cover;
     border-radius: 10px;
     margin-top: 30px;
+    cursor: pointer;
 }
 .titolo{
     position: absolute;
@@ -52,3 +61,64 @@ ul li{
     font-size: 20px;
     font-weight: normal;
 }
+.contenitore2{
+    width: 100%;
+    clear: both;
+    margin: 2% 0;
+}
+p{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.left-box{
+    float: left;
+    width: 20%;
+    display: inline-block;
+}
+.img1{
+    height: 200px;
+    background-image: url(img/img-1.jpg);
+    background-size: cover;
+}
+.center-box{
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin: 0 2.5%;
+}
+.img2{
+    height: 200px;
+    background-image: url(img/banner-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.right-box{
+    width: 20%;
+    display: inline-block;
+    float: right;
+}
+.img3{
+    height: 200px;
+    background-image: url(img/img-3.jpg);
+    background-size: cover;
+    background-position: 100vw;
+}
+.overlay{
+    filter: contrast(0.7);
+    border-radius: 10px;
+}
+.contenitore2::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+h6{
+    font-size: 20px;
+    font-weight: normal;
+}
+.contenitore2 p{
+    font-weight: normal;
+    color: #a8a8a8;
+}
+
+
